@@ -740,7 +740,7 @@
         email,
         options: {
           shouldCreateUser: false,
-          emailRedirectTo: window.location.origin
+          emailRedirectTo: new URL('.', window.location.href).href
         }
       });
       if (error) {
